@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "bookfluent-app": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bookfluent-app"
+    }
+  },
+  "defaultProject": "bookfluent-app",
+  "cli": {
+    "analytics": "fe4690dd-7589-4341-a405-f5f9f6dea204"
+  }
 }
