@@ -25,10 +25,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/styles/reset.css"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/variables.scss",
+              "src/styles/styles.scss"
             ],
             "scripts": []
           },

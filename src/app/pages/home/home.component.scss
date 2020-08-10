@@ -1,0 +1,38 @@
+@import "../../../styles/variables.scss";
+
+.home {
+  display: flex;
+  margin: 15vh auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+p {
+  flex-basis: 30%;
+  font: $home;
+  margin-bottom: 0;
+}
+
+.home__image {
+  width: 70vh;
+}
+.items {
+  height: 400px;
+  max-width: 550px;
+}
+
+img {
+  text-align: center;
+  width: 550px;
+  height: auto;
+}
+
+#left {
+  width: 50px;
+  height: 50px;
+}
+
+#right {
+  width: 50px;
+  height: 50px;
+}

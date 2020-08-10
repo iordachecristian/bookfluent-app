@@ -1,0 +1,29 @@
+<div class="home">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+  <div class="home__image">
+    <div ng2-carouselamos class="home__image--slide"
+      [width]="550"
+      [items]="items"
+      [$item]="item"
+      [$prev]="prev"
+      [$next]="next">
+
+      <ng-template #prev>
+        <img src="../../../assets/images/left.svg" id="left">
+      </ng-template>
+
+      <ng-template #next>
+        <img src="../../../assets/images/right.svg" id="right">
+      </ng-template>
+
+      <ng-template #item let-item let-i="index">
+        <div class="items">
+          <img src="{{ item.name }}">
+        </div>
+      </ng-template>
+
+    </div>
+  </div>
+</div>

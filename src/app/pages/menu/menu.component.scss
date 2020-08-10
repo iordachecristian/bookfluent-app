@@ -1,0 +1,80 @@
+@import "../../../styles/variables.scss";
+
+.menu {
+  margin: 20px auto;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu--left {
+  flex-basis: 20%;
+  h1 {
+    margin-bottom: 0;
+    font: $h1;
+    color: $black2;
+  }
+
+  p {
+    font: $motto;
+    color: $gray;
+  }
+}
+
+.menu--right {
+  flex-basis: 80%;
+  list-style: none;
+}
+  .menu--right li {
+    display: inline-flex;
+  }
+  .menu--right li  a {
+      font: $menu;
+      color: $gray;
+      margin-right: 70px;
+      padding: 5px;
+      background: #ededed;
+      text-decoration: none;
+      display: inline-block;
+  }
+.menu--right li a:hover{
+  color:$black2;
+}
+
+  .menu--right__button::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        display: block;
+        background: $orange;
+        transition: width .3s;
+  }
+
+  .menu--right__button:hover::after {
+        width:100%;
+        color:$black2;
+        transition: width .3s;
+      }
+
+.menu__button--login {
+  font: $menu;
+  color: $white;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  background: $orange-gradient;
+  border-radius: 24px;
+  width: auto;
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    box-shadow: 0px 10px 15px -5px rgba($color: orange, $alpha: 1);
+    transform: scale(1.03);
+  }
+  &:active {
+    box-shadow: 0px 4px 8px rgba($color: orange, $alpha: 2);
+    transform: scale(0.98);
+  }
+}

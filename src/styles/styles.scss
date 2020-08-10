@@ -1,0 +1,25 @@
+@import "../styles/variables.scss";
+
+html, body { height: 100%; }
+
+
+body{
+  background: #ededed;
+  margin: 0;
+}
+
+h2{
+  text-align: center;
+  font: $h2;
+  color:$gray;
+  position: relative;
+  margin-bottom: 50px;
+  &:after{
+    content: "";
+    background-color:$gray;
+    height: 2px;
+    width: 50px;
+    display: block;
+    margin: 5px auto;
+  }
+}

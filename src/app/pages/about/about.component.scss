@@ -1,0 +1,113 @@
+@import "../../../styles/variables.scss";
+.about {
+  margin: 50px 0;
+  position: relative;
+}
+h3 {
+  font: $h3;
+  color: $white-text;
+  text-align: center;
+}
+
+h4 {
+  font: $h4;
+  color: $white-text;
+  text-align: center;
+}
+
+.about__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  column-gap: 100px;
+  justify-content: center;
+}
+
+.about__bg{
+  background: url(../../../assets/images/bg.svg) no-repeat;
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 1800px;
+}
+
+.about__card {
+  position: relative;
+  margin: 0 40px;
+  background: $black-gradient;
+  padding: 30px 20px 0 20px;
+  border-radius: 24px;
+  min-height: 400px;
+  margin: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  p {
+    display: block;
+    font: $p_a;
+    color: $white-text;
+    max-width: 11vw;
+    margin: 0 auto 10px auto;
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
+  }
+
+  &:before {
+    content: "";
+    width: 220px;
+    height: 220px;
+    background: $shape-gradient;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    opacity: 0.1;
+  }
+}
+
+.wave {
+  background: url("../../../assets/images/wave1.svg") repeat-x;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 6000px;
+  height: 80px;
+  transform: translate3d(0, 0, 0);
+  transition: .3s cubic-bezier(0.36, 0.45, 0.63, 0.53);
+  filter: drop-shadow(0 0 24px rgba(193, 78, 49, 0.3));
+  opacity: 0;
+}
+
+.about__card:hover {
+  .wave:nth-of-type(1) {
+    animation: wave 30s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transition: .3s cubic-bezier(0.36, 0.45, 0.63, 0.53);
+    opacity: 1;
+  }
+  .wave:nth-of-type(2) {
+    animation: wave 30s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transition: .3s cubic-bezier(0.36, 0.45, 0.63, 0.53);
+    opacity: 1;
+  }
+}
+
+.wave:nth-of-type(2) {
+  background: url("../../../assets/images/wave2.svg") repeat-x;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(calc(-100% + 252px), 0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about__card {
+  }
+}
