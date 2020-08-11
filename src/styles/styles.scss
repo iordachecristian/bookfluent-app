@@ -1,25 +1,75 @@
 @import "../styles/variables.scss";
 
-html, body { height: 100%; }
-
-
-body{
-  background: #ededed;
-  margin: 0;
+html,
+body {
+  height: 100%;
 }
 
-h2{
+body {
+  background: #ededed;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $orange;
+  border-radius: 24px;
+  filter: brightness(90%);
+  transition: 0.1s $transition;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(90%);
+  transition: 0.1s $transition;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+a {
+  text-shadow: $text-shadow;
+  color: $gray2;
+}
+
+button {
+  cursor: pointer;
+}
+
+h2 {
   text-align: center;
   font: $h2;
-  color:$gray;
+  color: $gray1;
   position: relative;
   margin-bottom: 50px;
-  &:after{
+  &:after {
     content: "";
-    background-color:$gray;
+    background-color: $gray1;
     height: 2px;
     width: 50px;
     display: block;
     margin: 5px auto;
   }
+}
+
+.section {
+  margin-top: 15vh;
 }

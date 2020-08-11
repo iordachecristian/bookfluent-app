@@ -1,13 +1,14 @@
 $black2: #292929;
 $black1: #141414;
-$gray: #6b6b6b;
-$orange: #F8AF41;
-$red: #C14E31;
+$gray2: #6b6b6b;
+$gray1: #4a4a4a;
+$orange: #f8af41;
+$red: #c14e31;
 $white: #f7f7f7;
-$white-text: #EDEDED;
-$orange-gradient:linear-gradient(45deg, $orange, $red);
-$black-gradient:linear-gradient(45deg, $black1, $black2);
-$shape-gradient:linear-gradient(90deg, #ffffff, #646464);
+$white-text: #ededed;
+$orange-gradient: linear-gradient(45deg, $orange, $red);
+$black-gradient: linear-gradient(45deg, $black1, $black2);
+$shape-gradient: linear-gradient(90deg, #ffffff, #646464);
 
 $h1: 500 30px/35px "Raleway", sans-serif;
 $h2: 400 34px/40px "Raleway", sans-serif;
@@ -18,7 +19,9 @@ $menu: 500 20px/26px "Raleway", sans-serif;
 $motto: 500 15px/18px "Raleway", sans-serif;
 $home: 400 24px/29px "Raleway", sans-serif;
 
-
+$card-shadow: 0 3px 24px rgba(#2b2b2b, 0.3);
+$text-shadow: 0 1px 2px rgba($black1, 0.2);
+$transition: cubic-bezier(0.36, 0.45, 0.63, 0.53);
 
 @font-face {
   font-family: "Raleway";

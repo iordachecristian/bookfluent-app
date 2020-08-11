@@ -19,7 +19,7 @@
 
   p {
     font: $motto;
-    color: $gray;
+    color: $gray2;
   }
 }
 
@@ -27,36 +27,51 @@
   flex-basis: 80%;
   list-style: none;
 }
-  .menu--right li {
-    display: inline-flex;
-  }
-  .menu--right li  a {
-      font: $menu;
-      color: $gray;
-      margin-right: 70px;
-      padding: 5px;
-      background: #ededed;
-      text-decoration: none;
-      display: inline-block;
-  }
-.menu--right li a:hover{
-  color:$black2;
+
+.menu--right li {
+  display: inline-flex;
 }
 
-  .menu--right__button::after{
-        content: '';
-        width: 0;
-        height: 2px;
-        display: block;
-        background: $orange;
-        transition: width .3s;
-  }
+.menu--right li a {
+  font: $menu;
+  color: $gray2;
+  margin-right: 70px;
+  padding: 5px;
+  background: #ededed;
+  text-decoration: none;
+  display: inline-block;
+}
 
-  .menu--right__button:hover::after {
-        width:100%;
-        color:$black2;
-        transition: width .3s;
-      }
+.menu--right li a {
+  &:hover,
+  &:active,
+  &:focus {
+    color: $black2;
+  }
+}
+
+.menu--right__button {
+  &:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background: $orange;
+    transition: width 0.3s;
+  }
+}
+
+.menu--right__button {
+  &:hover,
+  &:active,
+  &:focus {
+    &:after {
+      width: 100%;
+      color: $black2;
+      transition: width 0.3s;
+    }
+  }
+}
 
 .menu__button--login {
   font: $menu;
@@ -66,15 +81,14 @@
   background: $orange-gradient;
   border-radius: 24px;
   width: auto;
+  transition: 0.2s $transition;
+  box-shadow: 0px 5px 10px -2px rgba($orange, 0.4);
+
+  &:hover,
+  &:active,
   &:focus {
-    outline: 0;
-  }
-  &:hover {
-    box-shadow: 0px 10px 15px -5px rgba($color: orange, $alpha: 1);
+    box-shadow: 0px 10px 24px -5px rgba($orange, 1);
     transform: scale(1.03);
-  }
-  &:active {
-    box-shadow: 0px 4px 8px rgba($color: orange, $alpha: 2);
-    transform: scale(0.98);
+    transition: 0.1s $transition;
   }
 }
