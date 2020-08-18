@@ -26,15 +26,8 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $orange;
+  background: linear-gradient(135deg, $orange, $red);
   border-radius: 24px;
-  filter: brightness(90%);
-  transition: 0.1s $transition;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  filter: brightness(90%);
-  transition: 0.1s $transition;
 }
 
 h1,
@@ -72,4 +65,38 @@ h2 {
 
 .section {
   margin-top: 15vh;
+}
+
+.button__animation {
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 30px;
+    width: 100%;
+    border-radius: 16px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: linear-gradient(rgba($white-text, 0), rgba($white-text, 0.5));
+    transition: 0.2s $transition;
+    opacity: 0;
+  }
+}
+
+.button__animation {
+  &:hover,
+  &:active,
+  &:focus {
+    &:after {
+      transform: translate(5px, 0);
+      transition: 0.1s $transition;
+    }
+
+    &:before {
+      transition: 0.2s $transition;
+      opacity: 1;
+    }
+  }
 }

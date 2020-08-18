@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8af41"/>
+      <stop offset="1" stop-color="#c14e31"/>
+    </linearGradient>
+    <filter id="Path_274" x="0" y="0" width="54" height="54" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#c14e31" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="iconfinder_instagram_281827" transform="translate(4.5 4.5)">
+    <g id="Group_3" data-name="Group 3">
+      <g transform="matrix(1, 0, 0, 1, -4.5, -4.5)" filter="url(#Path_274)">
+        <path id="Path_274-2" data-name="Path 274" d="M22.5,2.25A20.25,20.25,0,1,1,2.25,22.5,20.273,20.273,0,0,1,22.5,2.25M22.5,0A22.5,22.5,0,1,0,45,22.5,22.5,22.5,0,0,0,22.5,0Z" transform="translate(4.5 4.5)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <path id="Path_275" data-name="Path 275" d="M12.816,10.641h16.54a2.908,2.908,0,0,1,2.854,2.943V30.629a2.908,2.908,0,0,1-2.854,2.943H12.816A2.909,2.909,0,0,1,9.96,30.629V13.584a2.909,2.909,0,0,1,2.856-2.943Zm13.354,2.548a1.02,1.02,0,0,0-1,1.032v2.471a1.019,1.019,0,0,0,1,1.031h2.515a1.019,1.019,0,0,0,1-1.031V14.221a1.02,1.02,0,0,0-1-1.032H26.169ZM29.7,20.338H27.736a6.916,6.916,0,1,1-13.261,0H12.432v9.687a.9.9,0,0,0,.884.912H28.811a.9.9,0,0,0,.883-.912V20.338Zm-8.588-2.743a4.463,4.463,0,1,0,4.467,4.462A4.465,4.465,0,0,0,21.108,17.595Z" transform="translate(1.415 1.148)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

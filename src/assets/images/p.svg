@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8af41"/>
+      <stop offset="1" stop-color="#c14e31"/>
+    </linearGradient>
+    <filter id="Oval-1" x="0" y="0" width="54" height="54" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#c14e31" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Page-1" transform="translate(4.5 4.5)">
+    <g id="Pinterest">
+      <g transform="matrix(1, 0, 0, 1, -4.5, -4.5)" filter="url(#Oval-1)">
+        <path id="Oval-1-2" data-name="Oval-1" d="M22.5,0A22.5,22.5,0,1,0,45,22.5,22.5,22.5,0,0,0,22.5,0Zm0,2.7A19.8,19.8,0,1,0,42.3,22.5,19.8,19.8,0,0,0,22.5,2.7ZM13.95,19.2c0,2.312.826,4.368,2.6,5.135a.434.434,0,0,0,.635-.337c.059-.236.2-.831.259-1.079a.677.677,0,0,0-.183-.749,4.022,4.022,0,0,1-.837-2.636,6.191,6.191,0,0,1,6.247-6.438,4.878,4.878,0,0,1,5.279,5.151c0,3.875-1.619,7.146-4.022,7.146a2.049,2.049,0,0,1-2-2.589c.381-1.7,1.12-3.54,1.12-4.769,0-1.1-.557-2.018-1.711-2.018-1.357,0-2.447,1.487-2.447,3.479a5.424,5.424,0,0,0,.4,2.127l-1.632,7.324a15.969,15.969,0,0,0-.038,5.108.166.166,0,0,0,.3.077,14.579,14.579,0,0,0,2.291-4.4c.155-.6.892-3.694.892-3.694a3.585,3.585,0,0,0,3.1,1.675c4.079,0,6.846-3.939,6.846-9.212a7.78,7.78,0,0,0-8.032-7.7C16.989,10.8,13.95,15.378,13.95,19.2Zm0,0" transform="translate(4.5 4.5)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

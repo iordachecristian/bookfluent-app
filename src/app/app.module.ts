@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { AboutComponent } from './pages/about/about.component';
 import { ReviewsComponent } from './pages/reviews/reviews.component';
+import { FactsComponent } from './pages/facts/facts.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ReviewsComponent } from './pages/reviews/reviews.component';
     MenuComponent,
     HomeComponent,
     AboutComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    FactsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

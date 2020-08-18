@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.275" height="45" viewBox="0 0 51.275 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8af41"/>
+      <stop offset="1" stop-color="#c14e31"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_57" data-name="Rectangle 57" width="51.275" height="45" transform="translate(1226 3986)" stroke="#707070" stroke-width="1" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <filter id="Oval-1" x="-1.703" y="-4.5" width="54.681" height="54" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#c14e31" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Mask_Group_10" data-name="Mask Group 10" transform="translate(-1226 -3986)" clip-path="url(#clip-path)">
+    <g id="Page-1" transform="translate(1228.797 3986)">
+      <g id="Facebook">
+        <g transform="matrix(1, 0, 0, 1, -2.8, 0)" filter="url(#Oval-1)">
+          <path id="Oval-1-2" data-name="Oval-1" d="M22.84,45a22.672,22.672,0,0,0,22.84-22.5A22.672,22.672,0,0,0,22.84,0,22.672,22.672,0,0,0,0,22.5,22.672,22.672,0,0,0,22.84,45Zm0-2.7a19.951,19.951,0,0,0,20.1-19.8A19.951,19.951,0,0,0,22.84,2.7a19.951,19.951,0,0,0-20.1,19.8,19.951,19.951,0,0,0,20.1,19.8ZM24.5,32.4V22.5h2.973l.392-3.412H24.5V17.38c0-.89.091-1.367,1.483-1.367h1.859V12.6H24.871c-3.572,0-4.829,1.655-4.829,4.438v2.048H17.816V22.5h2.227v9.9Zm0,0" transform="translate(2.8)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
