@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "~9.0.2",
     "@angular/router": "~9.0.2",
     "@types/lodash.isequal": "^4.5.5",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "lodash.isequal": "^4.5.0",
     "ng2-carouselamos": "^4.1.0",
     "rxjs": "~6.5.4",
